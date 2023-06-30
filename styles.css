@@ -93,40 +93,14 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 /*************MEDIA QUERY************/
-@media screen and (max-width: 375px) {
-    div#navbar{
-        margin: 1rem 2rem;
+@media screen and (max-width: 540px) {
+    div.container > div:nth-child(1) {
+        grid-template-columns: 1fr;
     }
-    div.container{
-        display: block;
-        width: 100vw;
-        height: 40vh;
-        margin: 0;
-    }
-    img.mock-up{
-        width: 90%;
-        margin: 0 2rem;
-    }
-    h1{
-        font-weight: 400;
-        line-height: normal;
-    }
-    div.content{
-        width: 100%;
-        padding: 0.5em;
-        text-align: center;
-    }
-    button{
-        width: 60%;
-    }
-    div.contacts{
-        margin: 1rem auto;
-    }
-    footer > p.attribution{
-        position: absolute;
-        bottom: 0;
-        display: none;
+    footer {
+        flex-direction: column;
     }
 }
