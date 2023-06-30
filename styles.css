@@ -95,10 +95,13 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-/*************MEDIA QUERY************/
-@media screen and (max-width: 1000px) {
+/*************MEDIA QUERY************/  
+@media screen and (max-width: 540px) {
     div.container > div:nth-child(1) {
         grid-template-columns: 1fr;
+    }
+    div.container > div:nth-child(1) > div:nth-child(2) {
+        text-align: center;
     }
     footer {
         flex-direction: column;
