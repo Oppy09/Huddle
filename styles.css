@@ -96,7 +96,7 @@ footer {
     align-items: center;
 }
 /*************MEDIA QUERY************/
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1000px) {
     div.container > div:nth-child(1) {
         grid-template-columns: 1fr;
     }
