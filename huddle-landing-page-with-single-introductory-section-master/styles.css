@@ -1,0 +1,132 @@
+/*********UNIVERSAL SELECTOR***********/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+h1{
+    font-family: 'Poppins', Helvetica, Arial,  sans-serif;
+    font-weight: 600;
+    color: #fff;
+    line-height: 2;
+}
+p{
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 2;
+}
+div#navbar{
+    margin: 2rem;
+}
+div.container {
+    position: relative;
+}
+span {
+    height: 100%;
+    width: 100%;
+}
+img.mock-up{
+    width: 100%;
+}
+div.container {
+    min-height: 100vh;
+}
+div.container > div:nth-child(1){
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2em;
+}
+button{
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 12em;
+    color: hsl(257, 40%, 49%);
+}
+div.contacts{
+    gap: 1rem;
+    display: flex;
+}
+div.contacts >  span{
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 999px;
+    color: white
+}
+div.contacts >  span > a{
+    all: unset
+}
+a{
+    color: #fff;
+}
+button:hover{
+    background: hsl(300, 69%, 71%);
+    color: white;
+}
+span.facebook-icon:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+}
+span.twitter-icon:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+}
+span.instagram-icon:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+}
+footer {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+/*************MEDIA QUERY************/
+@media screen and (max-width: 375px) {
+    div#navbar{
+        margin: 1rem 2rem;
+    }
+    div.container{
+        display: block;
+        width: 100vw;
+        height: 40vh;
+        margin: 0;
+    }
+    img.mock-up{
+        width: 90%;
+        margin: 0 2rem;
+    }
+    h1{
+        font-weight: 400;
+        line-height: normal;
+    }
+    div.content{
+        width: 100%;
+        padding: 0.5em;
+        text-align: center;
+    }
+    button{
+        width: 60%;
+    }
+    div.contacts{
+        margin: 1rem auto;
+    }
+    footer > p.attribution{
+        position: absolute;
+        bottom: 0;
+        display: none;
+    }
+}
